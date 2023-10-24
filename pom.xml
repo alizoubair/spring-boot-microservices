@@ -20,6 +20,8 @@
       <module>clients</module>
       <module>notification</module>
       <module>apigateway</module>
+    <module>amqp</module>
+      <module>amqp</module>
   </modules>
 
   <properties>
