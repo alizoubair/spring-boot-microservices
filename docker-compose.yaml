@@ -35,6 +35,17 @@ services:
     ports:
       - "9411:9411"
 
+  rabbitmq:
+    image: rabbitmq:3.9.11-management-alpine
+    container_name: rabbitmq
+    environment:
+      DEFAULT_VHOST: /
+      DEFAULT_USER: guest
+      DEFAULT_PASS: guest
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
 networks:
   postgres:
     driver: bridge
